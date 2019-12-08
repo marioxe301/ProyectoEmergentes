@@ -48,38 +48,56 @@
  
 ### :fa-plug: Driver   
   
-&nbsp; &nbsp; El driver utilizado fue para el [**Modulo ESP8266**](https://os.mbed.com/teams/ESP8266/code/esp8266-driver/)   
+&nbsp; &nbsp; Los drivers para utiliar Arduino vienen incluidos en el IDE de [**Arduino**](https://www.arduino.cc/en/Guide/windows)
   
 ### :fa-laptop: IDE   
   
-&nbsp; &nbsp; Se utilizo el [**Arduino IDE**](https://www.arduino.cc/en/Main/Software)   
+&nbsp; &nbsp; Se utilizó el [**Arduino IDE**](https://www.arduino.cc/en/Main/Software)   
  
 ### :fa-object-group: Diseño   
   
   &nbsp; &nbsp; Para el diseño o prototipo digital del dispositvo se  utilizó la herramienta [**Fritzing-Portable**](https://sourceforge.net/projects/fritzing-portable/)   
+ 
+### :fa-search: Sensor
+
+&nbsp; &nbsp; Para el sensor de luz, no se utilizó una libreria.
+ 
+### :fa-tv: Pantalla (Display LCD)
+
+&nbsp; &nbsp; Las libreria usada para el display fue [**Liquid Crystal**](https://www.arduino.cc/en/Reference/LiquidCrystal)
+ 
+### :fa-wifi: Internet (Wifi)
+
+&nbsp; &nbsp; El arduino WeMos D1 ya viene integrado con un módulo WiFi. La libreria a usar es [**ESP8266WIFI**](https://arduino-esp8266.readthedocs.io/en/latest/esp8266wifi/readme.html)
+ 
+## **II. :fa-microchip: Hardware**
+ 
+###  :fa-microchip: Microcontrolador
+
+##### Arduino WeMos D1:
+
+<img src="https://raw.githubusercontent.com/marioxe301/ProyectoEmergentes/master/componentes/Wemos%20D1%20R1.jpg" width="200"/>
+
+> Se puede conseguir en [Amazon](https://www.amazon.com/BephaMart-ESP8266-Development-Compatible-Arduino/dp/B01BAL1IGW)
   
-### :fa-book: Libreria(s)   
- 
-&nbsp; &nbsp; Las libreria usada para el display fue [**Liquid Crystal**](https://www.arduino.cc/en/Reference/LiquidCrystal)   
- 
-### :fa-search: Sensor    
- 
-### :fa-tv: Pantalla (Display LCD)    
- 
-### :fa-wifi: Internet (Wifi)    
- 
-### :fa-microchip: Tarjeta(s)    
- 
-## **II. :fa-microchip: Hardware**     
- 
-###  :fa-microchip: Microcontrolador    
-  
-### :fa-search: Sensor    
- 
-### :fa-link: Placa de pruebas / Resistencia / Cables    
-     
-### :fa-tv: Pantalla (Display LCD)   
- 
+### :fa-search: Sensor
+
+##### Sensor UV S12SD
+
+<img src="https://raw.githubusercontent.com/marioxe301/ProyectoEmergentes/master/componentes/UV%20sensor%20S12SD.jpg" alt="drawing" width="200"/>  
+
+> Comprado en [Think Making](https://thinkmaking.org/shop/sensor-de-luz-ultravioleta-guva-s12d/)
+
+### :fa-tv: Pantalla (Display LCD)
+
+##### LCD 1602 + I2C
+
+<img src="https://raw.githubusercontent.com/marioxe301/ProyectoEmergentes/master/componentes/LCD.jpg" alt="drawing" width="200"/>
+
+<img src ="https://raw.githubusercontent.com/marioxe301/ProyectoEmergentes/master/componentes/I2C%20para%20LCD.jpg" width="200"/>
+
+> Comprado en [Think Making](https://thinkmaking.org/shop/pantalla-lcd-1602-i2c/)
+
 ## **III. :fa-object-group: Diseño**    
  
 ### :fa-microchip: Pinout de Microcontrolador / :fa-desktop: Computadora (Raspberry Pi)    
