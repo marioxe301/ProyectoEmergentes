@@ -114,7 +114,7 @@
   
 #### :fa-paint-brush: Diseño en Fritzing del proyecto
 
-<img src="https://raw.githubusercontent.com/marioxe301/ProyectoEmergentes/master/circuito/CircuitoProyecto.png" width="200x"/>
+ ![Diseño Fritzing](./circuito/CircuitoProyecto.png)
  
 ###  **IV. :fa-code: Desarrollo**   
  
@@ -242,8 +242,7 @@ El video demostrativo se puede ver en [**Youtube**](https://youtu.be/AB2dkN5RNro
 #### :fa-camera: Envío  a servidor (Imagen)    
    
 #### :fa-camera: Todos los componentes del proyecto
-<img src ="https://raw.githubusercontent.com/marioxe301/ProyectoEmergentes/master/circuito/circuito%20completo.jpg" width="250"/>
-
+![Dispositivo Completo](./circuito/dispositivoCompleto.jpg)
 
 
 ## :fa-step-forward: **Fin**
