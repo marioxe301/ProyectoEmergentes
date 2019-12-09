@@ -127,7 +127,7 @@
 ### :fa-wifi: Internet (Wifi)    
   
 ### :fa-code: Código de proyecto     
-``` 
+```c 
 #include <ESP8266HTTPClient.h>  
 #include <ESP8266WiFi.h>  
 #include <LiquidCrystal_I2C.h>  
