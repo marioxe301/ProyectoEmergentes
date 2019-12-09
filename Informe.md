@@ -104,6 +104,7 @@
   
 #### :fa-microchip: Pinout de Microcontrolador / Mapeo de pines
 
+![Pinout WeMos D1](./componentes/WemosD1_Pinout.png)
 | Arduino    | LCD | Sensor |
 |:----------:|:---:|:------:|
 | D14/SDA/D4 | SDA |        |
@@ -111,6 +112,7 @@
 | 5V         | VCC |   VCC  |
 | GND        | GND |   GND  |
 | A0         |     |   OUT  |
+
   
 #### :fa-paint-brush: Diseño en Fritzing del proyecto
 
