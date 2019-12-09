@@ -120,15 +120,24 @@
  
 ###  **IV. :fa-code: Desarrollo**   
  
-#### :fa-microchip: Instalación de Tarjeta (Arduino)      
- 
-#### :fa-book: Instalación de Libreria(s)   
-  
-##### :fa-search: Sensor   
-  
+#### :fa-microchip: Instalación de Tarjeta (Arduino)  
+
+&nbsp; &nbsp; En nuestro caso, no hubo necesidad de instalar una placa extra a nuestro arduino, solamente los componentes previamente listados (LCD, sensor) 
+
+#### :fa-book: Instalación de Libreria(s)    
+
+##### :fa-search: Sensor    
+
+&nbsp; &nbsp; No fue requerida una libreria para el sensor, el sensor simplemente enviaba una señal de entrada analoga a nuestro arduino 
+
 ##### :fa-tv: Pantalla (Display LCD)   
-  
-##### :fa-wifi: Internet (Wifi)    
+
+&nbsp; &nbsp; Para poder utilizar el LCD, fue necesario descargar una libreria afuera del arduino IDE. Se siguieron los mismos [***pasos de instalacion de la pagina oficial del creador de la libreria "Arduino-LiquidCrystal-I2C-library"***](https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library/blob/master/README.md), la cual terminamos integrando a nuestro proyecto. 
+
+<img src="https://github.com/marioxe301/ProyectoEmergentes/blob/master/componentes/libreria_ARDUINO_LCD.png" width="200x"/>        
+### :fa-wifi: Internet (Wifi) 
+
+&nbsp; &nbsp; Para la instalacion de las librerias del Wifi (libreria [***ESP8266HTTPClient***](https://github.com/esp8266/Arduino/tree/master/libraries/ESP8266HTTPClient) y [***ESP8266WiFi***](https://github.com/esp8266/Arduino/tree/master/libraries/ESP8266WiFi)), simplemente fue cuestion de añadirla al proyecto ya que estas dos librerias ya vienen incluidas en las librerias que vienen con el arduino IDE.    
   
 #### :fa-code: Código de proyecto     
 ```c 
