@@ -2,26 +2,29 @@
   
 ## :fa-play: **Inicio**    
  
-#### :fa-users: Integrantes    
+### :fa-users: Integrantes    
    
-#### Andy Escobar - 21611024    
-#### Ivan Carcamo - 21611288    
-#### Luis Ponce   - 21711234    
-#### Mario Flores - 21711252    
+#### &nbsp;&nbsp;&nbsp;&nbsp;    Andy Escobar - 21611024    
+#### &nbsp;&nbsp;&nbsp;&nbsp;    Ivan Carcamo - 21611288    
+#### &nbsp;&nbsp;&nbsp;&nbsp;    Luis Ponce   - 21711234    
+#### &nbsp;&nbsp;&nbsp;&nbsp;    Mario Flores - 21711252    
  
-## :fa-info-circle: Introducción      
+### :fa-info-circle: **Introducción**     
   
-&nbsp; El siguiente informe da detalles de como se implementó un sistema simple que da información acerda de la luminosidad del ambiente.      
+&nbsp;&nbsp; El siguiente informe da detalles de como se implementó un sistema simple que da información acerda de la luminosidad del ambiente.      
   
-&nbsp; Con el avance  de la tecnología y desarrollo  de nuevos los sensores  podemos realizas diversas dispositivos que nos ayuden de una manera precisa y automatizada para obtener datos, como por ejemplo la temparatura en lugar, la condiciones de luz en ambiente, la humedad en una superficie. Y gracias a estos podemos hacer uso del internet que da paso al **IoT** (*Internet Of Things / Español: Internet de la Cosas*), ya que nos proporciona grandes ventajas como ver los datos de nuestros dispositivos en cualquier lugar en que estemos siempre y cuando obtengamos acceso a internet.     
+&nbsp;&nbsp; Con el avance  de la tecnología y desarrollo  de nuevos los sensores  podemos realizas diversas dispositivos que nos ayuden de una manera precisa y automatizada para obtener datos, como por ejemplo la temparatura en lugar, la condiciones de luz en ambiente, la humedad en una superficie. Y gracias a estos podemos hacer uso del internet que da paso al **IoT** (*Internet Of Things / Español: Internet de la Cosas*), ya que nos proporciona grandes ventajas como ver los datos de nuestros dispositivos en cualquier lugar en que estemos siempre y cuando obtengamos acceso a internet.     
 &nbsp;     
-&nbsp; Acontinuacion estaremos mostrando el desarrollo de un dispositivos que es capaz de detectar la intensida de luz en un ambiente y por medio de un modulo Wi-Fi en el circuito trasmitirlo atravez de internet en una pagina web, demostrando asi un ejemplo aplicable para el **Internet de las Cosas**.   
+&nbsp;&nbsp; Acontinuacion estaremos mostrando el desarrollo de un dispositivos que es capaz de detectar la intensida de luz en un ambiente y por medio de un modulo Wi-Fi en el circuito trasmitirlo atravez de internet en una pagina web, demostrando asi un ejemplo aplicable para el **Internet de las Cosas**.   
  
-## :fa-bullseye: Objetivos    
+### :fa-bullseye: **Objetivos**    
   
 &nbsp;&nbsp; - Implementar un circuito con un **sensor de luz** usando el microcontrolador **Arduino Uno** capaz de leer la intensida de luz que recibe.     
  
-&nbsp;&nbsp; - Implementar el **sensor de Wi-Fi** en el circuito para que este envie la información atravez de internet     
+&nbsp;&nbsp; - Implementar el **sensor de Wi-Fi** en el circuito para que este envie la información atravez de internet  
+
+&nbsp;&nbsp;  
+&nbsp;&nbsp;  
   
 ## :fa-forward: **Contenido**     
   
@@ -44,35 +47,35 @@
   
 &nbsp; &nbsp; Es una aplicacion multiplataforma que se utiliza para escribir y cargar programas en placas compatibles con Arduino. Admite los lenguajes C y C ++ utilizando reglas especiales de estructuración de códigos.   
   
-##  **I. :fa-save: Software**      
+###  **I. :fa-save: Software**      
  
-### :fa-plug: Driver   
+#### :fa-plug: Driver   
   
 &nbsp; &nbsp; Los drivers para utiliar Arduino vienen incluidos en el IDE de [**Arduino**](https://www.arduino.cc/en/Guide/windows)
   
-### :fa-laptop: IDE   
+#### :fa-laptop: IDE   
   
 &nbsp; &nbsp; Se utilizó el [**Arduino IDE**](https://www.arduino.cc/en/Main/Software)   
  
-### :fa-object-group: Diseño   
+#### :fa-object-group: Diseño   
   
   &nbsp; &nbsp; Para el diseño o prototipo digital del dispositvo se  utilizó la herramienta [**Fritzing-Portable**](https://sourceforge.net/projects/fritzing-portable/)   
  
-### :fa-search: Sensor
+#### :fa-search: Sensor
 
 &nbsp; &nbsp; Para el sensor de luz, no se utilizó una libreria.
  
-### :fa-tv: Pantalla (Display LCD)
+#### :fa-tv: Pantalla (Display LCD)
 
 &nbsp; &nbsp; Las libreria usada para el display fue [**Liquid Crystal**](https://www.arduino.cc/en/Reference/LiquidCrystal)
  
-### :fa-wifi: Internet (Wifi)
+#### :fa-wifi: Internet (Wifi)
 
 &nbsp; &nbsp; El arduino WeMos D1 ya viene integrado con un módulo WiFi. La libreria a usar es [**ESP8266WIFI**](https://arduino-esp8266.readthedocs.io/en/latest/esp8266wifi/readme.html)
  
-## **II. :fa-microchip: Hardware**
+### **II. :fa-microchip: Hardware**
  
-###  :fa-microchip: Microcontrolador
+####  :fa-microchip: Microcontrolador
 
 ##### Arduino WeMos D1:
 
@@ -80,7 +83,7 @@
 
 > Se puede conseguir en [Amazon](https://www.amazon.com/BephaMart-ESP8266-Development-Compatible-Arduino/dp/B01BAL1IGW)
   
-### :fa-search: Sensor
+#### :fa-search: Sensor
 
 ##### Sensor UV S12SD
 
@@ -88,7 +91,7 @@
 
 > Comprado en [Think Making](https://thinkmaking.org/shop/sensor-de-luz-ultravioleta-guva-s12d/)
 
-### :fa-tv: Pantalla (Display LCD)
+#### :fa-tv: Pantalla (Display LCD)
 
 ##### LCD 1602 + I2C
 
@@ -98,9 +101,9 @@
 
 > Comprado en [Think Making](https://thinkmaking.org/shop/pantalla-lcd-1602-i2c/)
 
-## **III. :fa-object-group: Diseño**     
+### **III. :fa-object-group: Diseño**     
   
-### :fa-microchip: Pinout de Microcontrolador / Mapeo de pines
+#### :fa-microchip: Pinout de Microcontrolador / Mapeo de pines
 
 | Arduino    | LCD | Sensor |
 |:----------:|:---:|:------:|
@@ -110,23 +113,23 @@
 | GND        | GND |   GND  |
 | A0         |     |   OUT  |
   
-### :fa-paint-brush: Diseño en Fritzing del proyecto
+#### :fa-paint-brush: Diseño en Fritzing del proyecto
 
 <img src="https://raw.githubusercontent.com/marioxe301/ProyectoEmergentes/master/circuito/CircuitoProyecto.png" width="200x"/>
  
-##  **IV. :fa-code: Desarrollo**   
+###  **IV. :fa-code: Desarrollo**   
  
-### :fa-microchip: Instalación de Tarjeta (Arduino)      
+#### :fa-microchip: Instalación de Tarjeta (Arduino)      
  
-### :fa-book: Instalación de Libreria(s)   
+#### :fa-book: Instalación de Libreria(s)   
   
-### :fa-search: Sensor   
+##### :fa-search: Sensor   
   
-### :fa-tv: Pantalla (Display LCD)   
+##### :fa-tv: Pantalla (Display LCD)   
   
-### :fa-wifi: Internet (Wifi)    
+##### :fa-wifi: Internet (Wifi)    
   
-### :fa-code: Código de proyecto     
+#### :fa-code: Código de proyecto     
 ```c 
 #include <ESP8266HTTPClient.h>  
 #include <ESP8266WiFi.h>  
@@ -230,14 +233,24 @@ void hacerPost(String sensor){
 }  
 ``` 
  
-## **V. :fa-check: Funcionalidad**   
+### **V. :fa-check: Funcionalidad**   
   
-### :fa-film: Demostración (Video)
+#### :fa-film: Demostración (Video)
 El video demostrativo se puede ver en [**Youtube**](https://youtu.be/AB2dkN5RNro)
    
-### :fa-camera: Despliegue en pantalla (Imagen)     
+#### :fa-camera: Despliegue en pantalla (Imagen)     
    
-### :fa-camera: Envío  a servidor (Imagen     
+#### :fa-camera: Envío  a servidor (Imagen)    
    
-### :fa-camera: Todos los componentes del proyecto
+#### :fa-camera: Todos los componentes del proyecto
 <img src ="https://raw.githubusercontent.com/marioxe301/ProyectoEmergentes/master/circuito/circuito%20completo.jpg" width="250"/>
+
+
+
+## :fa-step-forward: **Fin**
+
+### &nbsp;&nbsp; :fa-check-circle: Conclusiones
+
+### &nbsp;&nbsp; :fa-external-link: Referencias 
+
+ 
