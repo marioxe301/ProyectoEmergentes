@@ -98,11 +98,21 @@
 
 > Comprado en [Think Making](https://thinkmaking.org/shop/pantalla-lcd-1602-i2c/)
 
-## **III. :fa-object-group: Diseño**    
- 
-### :fa-microchip: Pinout de Microcontrolador / :fa-desktop: Computadora (Raspberry Pi)    
- 
-### :fa-paint-brush: Fritzing de proyecto   
+## **III. :fa-object-group: Diseño**     
+  
+### :fa-microchip: Pinout de Microcontrolador / Mapeo de pines
+
+| Arduino    | LCD | Sensor |
+|:----------:|:---:|:------:|
+| D14/SDA/D4 | SDA |        |
+| D15/SDL/D3 | SCL |   $12  |
+| 5V         | VCC |   VCC  |
+| GND        | GND |   GND  |
+| A0         |     |   OUT  |
+  
+### :fa-paint-brush: Diseño en Fritzing del proyecto
+
+<img src="https://raw.githubusercontent.com/marioxe301/ProyectoEmergentes/master/circuito/CircuitoProyecto.png" width="200x"/>
  
 ##  **IV. :fa-code: Desarrollo**   
  
@@ -222,10 +232,12 @@ void hacerPost(String sensor){
  
 ## **V. :fa-check: Funcionalidad**   
   
-### :fa-film: Demostración (Video)    
-  
-### :fa-camera: Despliegue en pantalla (Imagen)    
-  
-### :fa-camera: Envío  a servidor (Imagen    
-  
-### :fa-camera: Todos los componentes del proyecto (Imagen) 
+### :fa-film: Demostración (Video)
+El video demostrativo se puede ver en [**Youtube**](https://youtu.be/AB2dkN5RNro)
+   
+### :fa-camera: Despliegue en pantalla (Imagen)     
+   
+### :fa-camera: Envío  a servidor (Imagen     
+   
+### :fa-camera: Todos los componentes del proyecto
+<img src ="https://raw.githubusercontent.com/marioxe301/ProyectoEmergentes/master/circuito/circuito%20completo.jpg" width="250"/>
