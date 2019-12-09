@@ -249,8 +249,20 @@ El video demostrativo se puede ver en [**Youtube**](https://youtu.be/AB2dkN5RNro
 
 ## :fa-step-forward: **Fin**
 
+
 ### &nbsp;&nbsp; :fa-check-circle: Conclusiones
 
-### &nbsp;&nbsp; :fa-external-link: Referencias 
 
- 
+##### &nbsp; &nbsp; &nbsp; :heavy_check_mark: El Internet de las Cosas se plantea como una tecnología de enorme utilidad a la hora de mejorar la eficiencia de los dispositivos.
+
+##### &nbsp; &nbsp; &nbsp; :heavy_check_mark: Apredimos que con Arduino podemos crear un dispositivo que funcione con los principios del  Internet de la Cosas 
+
+
+##### &nbsp; &nbsp; &nbsp; :heavy_check_mark: Se implementó un circuito capaz de realizar un dispositvo capaz de leer la intensidad de luz en un ambiente.
+
+
+##### &nbsp; &nbsp; &nbsp; :heavy_check_mark: Se logró extraer los datos recolectados por el sensor y enviarlos atravez de internet y que estos sean proyectados en un sitio web.
+
+
+
+### &nbsp;&nbsp; :fa-external-link: Referencias 
