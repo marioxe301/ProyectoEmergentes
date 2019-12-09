@@ -237,7 +237,9 @@ void hacerPost(String sensor){
 ### **V. :fa-check: Funcionalidad**   
   
 #### :fa-film: Demostración (Video)
-El video demostrativo se puede ver en [**Youtube**](https://youtu.be/AB2dkN5RNro)
+
+[![Video Demostrativo](https://img.youtube.com/vi/AB2dkN5RNro/0.jpg)](https://youtu.be/AB2dkN5RNro)
+
    
 #### :fa-camera: Despliegue en pantalla (Imagen)     
    
