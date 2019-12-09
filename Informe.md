@@ -269,8 +269,6 @@ void hacerPost(String sensor){
 
 ##### &nbsp; &nbsp; &nbsp; :heavy_check_mark:  Aprendimos a aprovechar de las librerias que ofrece Arduino y tambien a la instalacion de librerias de terceros para llevar a cabo la integracion de componentes que nos ayudaron a desarrollar el proyecto
 
-##### &nbsp; &nbsp; &nbsp; :heavy_check_mark:   Aprendimos que meca solo es gastar pisto en mierdas para hacer control c y control v
-
 
 
 ### &nbsp;&nbsp; :fa-external-link: Referencias 
