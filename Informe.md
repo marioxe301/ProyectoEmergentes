@@ -71,7 +71,7 @@
 
 ##### Arduino WeMos D1:
 
- ![Arduino WeMos D1](./componentes/WeMosD1R1.jpg)
+ ![Arduino WeMos D1](./src/imagenes/WeMosD1R1.jpg)
 
 > Se puede conseguir en [Amazon](https://www.amazon.com/BephaMart-ESP8266-Development-Compatible-Arduino/dp/B01BAL1IGW)
   
@@ -81,7 +81,7 @@
 
 ##### Sensor UV S12SD
 
- ![UV Sensor S12](./componentes/UV_Sensor_S12SD.jpg)
+ ![UV Sensor S12](./src/imagenes/UV_Sensor_S12SD.jpg)
 
 > Comprado en [Think Making](https://thinkmaking.org/shop/sensor-de-luz-ultravioleta-guva-s12d/)
 
@@ -94,8 +94,8 @@
 
 ##### LCD 1602 + I2C
 
-  ![LCD Parte Frontal](./componentes/LCD.jpg)
-  ![LCD Parte Trasera](./componentes/I2C_LCD.jpg)
+  ![LCD Parte Frontal](./src/imagenes/LCD.jpg)
+  ![LCD Parte Trasera](./src/imagenes/I2C_LCD.jpg)
 
 > Comprado en [Think Making](https://thinkmaking.org/shop/pantalla-lcd-1602-i2c/)
 
@@ -103,7 +103,7 @@
   
 #### :fa-microchip: Pinout de Microcontrolador / Mapeo de pines
 
-![Pinout WeMos D1](./componentes/WemosD1_Pinout.png)
+![Pinout WeMos D1](./src/imagenes/WemosD1_Pinout.png)
 | Arduino    | LCD | Sensor |
 |:----------:|:---:|:------:|
 | D14/SDA/D4 | SDA |        |
@@ -115,7 +115,7 @@
   
 #### :fa-paint-brush: Diseño en Fritzing del proyecto
 
- ![Diseño Fritzing](./circuito/CircuitoProyecto.png)
+ ![Diseño Fritzing](./src/imagenes/CircuitoProyecto.png)
  
 ###  **IV. :fa-code: Desarrollo**   
  
@@ -133,14 +133,14 @@
 
 &nbsp; &nbsp; Para poder utilizar el LCD, fue necesario descargar una libreria afuera del arduino IDE. Se siguieron los mismos [***pasos de instalacion de la pagina oficial del creador de la libreria "Arduino-LiquidCrystal-I2C-library"***](https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library/blob/master/README.md), la cual terminamos integrando a nuestro proyecto. 
 
-![Libreria Arduino LCD](./componentes/libreria_ARDUINO_LCD.png)
+![Libreria Arduino LCD](./src/imagenes/libreria_ARDUINO_LCD.png)
 
 ### :fa-wifi: Internet (Wifi) 
 
 &nbsp; &nbsp; Para la instalacion de las librerias del Wifi (libreria [***ESP8266HTTPClient***](https://github.com/esp8266/Arduino/tree/master/libraries/ESP8266HTTPClient) y [***ESP8266WiFi***](https://github.com/esp8266/Arduino/tree/master/libraries/ESP8266WiFi)), simplemente fue cuestion de añadirla al proyecto ya que estas dos librerias ya vienen incluidas en las librerias que vienen con el arduino IDE.    
   
 #### :fa-code: Código de proyecto     
-```c 
+```cpp 
 #include <ESP8266HTTPClient.h>  
 #include <ESP8266WiFi.h>  
 #include <LiquidCrystal_I2C.h>  
@@ -251,14 +251,14 @@ void hacerPost(String sensor){
 
    
 #### :fa-camera: Despliegue en pantalla     
-   ![Despliegue en Pantalla](./componentes/LCD_Imagen.png)
+   ![Despliegue en Pantalla](./src/imagenes/LCD_Imagen.png)
 
 
 #### :fa-camera: Envío  a servidor  
-  ![Despliegue en Pantalla](./componentes/envio_servidor.png) 
+  ![Despliegue en Pantalla](./src/imagenes/envio_servidor.png) 
    
 #### :fa-camera: Todos los componentes del proyecto
-![Dispositivo Completo](./circuito/dispositivoCompleto.jpg)
+![Dispositivo Completo](./src/imagenes/dispositivoCompleto.jpg)
 
 
 ## :fa-step-forward: **Fin**
