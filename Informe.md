@@ -1,19 +1,17 @@
-# Mini Estacion Meteorologica (con sensor de luz GUVA-S12D)    
+
+# Mini Estacion Meteorológica (con sensor de luz GUVA-S12D)    
   
 ## :fa-play: **Inicio**    
  
 ### :fa-users: Integrantes    
    
 #### &nbsp;&nbsp;&nbsp;&nbsp;    Andy Escobar - 21611024    
-#### &nbsp;&nbsp;&nbsp;&nbsp;    Ivan Carcamo - 21611288    
+#### &nbsp;&nbsp;&nbsp;&nbsp;    Iván Carcamo - 21611288    
 #### &nbsp;&nbsp;&nbsp;&nbsp;    Luis Ponce   - 21711234    
 #### &nbsp;&nbsp;&nbsp;&nbsp;    Mario Flores - 21711252    
-
 &nbsp;&nbsp;
- 
 ### :fa-info-circle: **Introducción**     
   
-
 &nbsp;&nbsp; Con el avance  de la tecnología y desarrollo  de nuevos los sensores  podemos realizas diversas dispositivos que nos ayuden de una manera precisa y automatizada para obtener datos, como por ejemplo la temparatura en lugar, la condiciones de luz en ambiente, la humedad en una superficie. Y gracias a estos podemos hacer uso del internet que da paso al **IoT** (*Internet Of Things / Español: Internet de la Cosas*), ya que nos proporciona grandes ventajas como ver los datos de nuestros dispositivos en cualquier lugar en que estemos siempre y cuando obtengamos acceso a internet.   
 &nbsp;     
 &nbsp;&nbsp; A continuación estaremos mostrando el desarrollo de un dispositivos que es capaz de detectar la intensida de luz en un ambiente y atravez de un módulo Wi-Fi en el circuito trasmitirlo a travez de internet en una página web, demostrando asi un ejemplo aplicable para el **Internet de las Cosas**.   
