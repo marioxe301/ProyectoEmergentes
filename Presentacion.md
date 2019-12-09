@@ -113,7 +113,7 @@ marp: true
 ---  
 #### :black_circle: Pinout de Microcontrolador / Mapeo de pines
 
-![Pinout WeMos D1](./src/imagenes/WemosD1_Pinout.png)
+![Pinout WeMos D1](./src/imagenes/PinOut_WeMosD1R1.jpg)
 
 ---
 | Arduino    | LCD | Sensor |
