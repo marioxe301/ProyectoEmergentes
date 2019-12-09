@@ -5,10 +5,10 @@ marp: true
 
 # Mini Estacion Meteorológica (con sensor de luz GUVA-S12D)    
 ---
-## :fa-play: **Inicio**    
+## :radio_button: **Inicio**    
 ---
 
-### :fa-users: Integrantes    
+###  Integrantes    
    
 #### &nbsp;&nbsp;&nbsp;&nbsp;    Andy Escobar - 21611024    
 #### &nbsp;&nbsp;&nbsp;&nbsp;    Iván Carcamo - 21611288  
@@ -17,7 +17,7 @@ marp: true
 &nbsp;&nbsp;
 
 ---
-### :fa-info-circle: **Introducción**     
+### :large_blue_diamond: **Introducción**     
 ---
 &nbsp;&nbsp; Con el avance  de la tecnología y desarrollo  de nuevos los sensores  podemos realizas diversas dispositivos que nos ayuden de una manera precisa y automatizada para obtener datos, como por ejemplo la temparatura en lugar, la condiciones de luz en ambiente, la humedad en una superficie. Y gracias a estos podemos hacer uso del internet que da paso al **IoT** (*Internet Of Things / Español: Internet de la Cosas*), ya que nos proporciona grandes ventajas como ver los datos de nuestros dispositivos en cualquier lugar en que estemos siempre y cuando obtengamos acceso a internet.   
 &nbsp;  
@@ -26,7 +26,7 @@ marp: true
 &nbsp;&nbsp; A continuación estaremos mostrando el desarrollo de un dispositivos que es capaz de detectar la intensida de luz en un ambiente y atravez de un módulo Wi-Fi en el circuito trasmitirlo a travez de internet en una página web, demostrando asi un ejemplo aplicable para el **Internet de las Cosas**. 
 
  ---
-### :fa-bullseye: **Objetivos**    
+### :large_blue_diamond: **Objetivos**    
   
 &nbsp;&nbsp; - Implementar un circuito con un **sensor de luz** usando el microcontrolador **Arduino Uno** capaz de leer la intensida de luz que recibe.     
  
@@ -38,17 +38,17 @@ marp: true
 
  --- 
   
-## :fa-forward: **Contenido**     
+## :radio_button: **Contenido**     
 
 ---  
 
-###  **I. :fa-save: Software**      
+###  **I. :large_blue_diamond: Software**      
 ---
-#### :fa-plug: Driver   
+#### :black_circle: Driver   
   
 &nbsp; &nbsp; Los drivers para utiliar Arduino vienen incluidos en el IDE de [**Arduino**](https://www.arduino.cc/en/Guide/windows)
   
-#### :fa-laptop: IDE   
+#### :black_circle: IDE   
   
 &nbsp; &nbsp; Se utilizó el [**Arduino IDE**](https://www.arduino.cc/en/Main/Software)   
 ###### &nbsp; &nbsp;  Arduino IDE:   
@@ -56,26 +56,26 @@ marp: true
  
  ---
 
-#### :fa-object-group: Diseño   
+#### :black_circle: Diseño   
   
   &nbsp; &nbsp; Para el diseño o prototipo digital del dispositvo se  utilizó la herramienta **[Fritzing-Portable](https://sourceforge.net/projects/fritzing-portable/)**   
  
-#### :fa-search: Sensor
+#### :black_circle: Sensor
 
 &nbsp; &nbsp; Para el sensor de luz, no se utilizó una libreria.
  
-#### :fa-tv: Pantalla (Display LCD)
+#### :black_circle: Pantalla (Display LCD)
 
 &nbsp; &nbsp; Las libreria usada para el display fue **[Liquid Crystal](https://www.arduino.cc/en/Reference/LiquidCrystal)**
  
-#### :fa-wifi: Internet (Wifi)
+#### :black_circle: Internet (Wifi)
 
 &nbsp; &nbsp; El arduino WeMos D1 ya viene integrado con un módulo WiFi. La libreria a usar es [**ESP8266WIFI**](https://arduino-esp8266.readthedocs.io/en/latest/esp8266wifi/readme.html)
 
 --- 
-### **II. :fa-microchip: Hardware**
+### **II. :large_blue_diamond: Hardware**
 ---
-####  :fa-microchip: Microcontrolador
+####  :black_circle: Microcontrolador
 
 ###### &nbsp; Microcontrolador:   
   
@@ -88,14 +88,14 @@ marp: true
 > Se puede conseguir en [Amazon](https://www.amazon.com/BephaMart-ESP8266-Development-Compatible-Arduino/dp/B01BAL1IGW)
 
 ---
-#### :fa-search: Sensor
+#### :black_circle: Sensor
 ##### Sensor UV S12SD
  ![UV Sensor S12](./src/imagenes/UV_Sensor_S12SD.jpg)
 > Comprado en [Think Making](https://thinkmaking.org/shop/sensor-de-luz-ultravioleta-guva-s12d/)
 
 ---
 
-#### :fa-tv: Pantalla (Display LCD)
+#### :black_circle: Pantalla (Display LCD)
 
 ##### LCD 1602 + I2C
 
@@ -109,9 +109,9 @@ marp: true
 ---
 
 
-### **III. :fa-object-group: Diseño**     
+### **III. :large_blue_diamond: Diseño**     
 ---  
-#### :fa-microchip: Pinout de Microcontrolador / Mapeo de pines
+#### :black_circle: Pinout de Microcontrolador / Mapeo de pines
 
 ![Pinout WeMos D1](./src/imagenes/WemosD1_Pinout.png)
 
@@ -126,41 +126,41 @@ marp: true
 
 ---
   
-#### :fa-paint-brush: Diseño en Fritzing del proyecto
+#### :black_circle: Diseño en Fritzing del proyecto
 
  ![Diseño Fritzing](./src/imagenes/CircuitoProyecto.png)
 
  ---
  
-###  **IV. :fa-code: Desarrollo**   
+###  **IV. :large_blue_diamond: Desarrollo**   
  
  ---
-#### :fa-microchip: Instalación de Tarjeta (Arduino)  
+#### :black_circle: Instalación de Tarjeta (Arduino)  
 
 &nbsp; &nbsp; En nuestro caso, no hubo necesidad de instalar una placa extra a nuestro arduino, solamente los componentes previamente listados (LCD, sensor) 
 
 ---
 
-#### :fa-book: Instalación de Libreria(s)    
+#### :black_circle: Instalación de Libreria(s)    
 
-##### :fa-search: Sensor    
+##### :small_orange_diamond: Sensor    
 
 &nbsp; &nbsp; No fue requerida una libreria para el sensor, el sensor simplemente enviaba una señal de entrada analoga a nuestro arduino 
 
 ---
-##### :fa-tv: Pantalla (Display LCD)   
+##### :small_orange_diamond: Pantalla (Display LCD)   
 
 &nbsp; &nbsp; Para poder utilizar el LCD, fue necesario descargar una libreria afuera del arduino IDE. Se siguieron los mismos [***pasos de instalacion de la pagina oficial del creador de la libreria "Arduino-LiquidCrystal-I2C-library"***](https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library/blob/master/README.md), la cual terminamos integrando a nuestro proyecto. 
 
 ![Libreria Arduino LCD](./src/imagenes/libreria_ARDUINO_LCD.png)
 
 ---
-### :fa-wifi: Internet (Wifi) 
+### :large_blue_diamond: Internet (Wifi) 
 
 &nbsp; &nbsp; Para la instalacion de las librerias del Wifi (libreria [***ESP8266HTTPClient***](https://github.com/esp8266/Arduino/tree/master/libraries/ESP8266HTTPClient) y [***ESP8266WiFi***](https://github.com/esp8266/Arduino/tree/master/libraries/ESP8266WiFi)), simplemente fue cuestion de añadirla al proyecto ya que estas dos librerias ya vienen incluidas en las librerias que vienen con el arduino IDE.    
   
   ---
-#### :fa-code: Código de proyecto     
+#### :black_circle: Código de proyecto     
 ```cpp 
 #include <ESP8266HTTPClient.h>  
 #include <ESP8266WiFi.h>  
@@ -376,31 +376,31 @@ void hacerPost(String sensor){
 } 
 ```
 ---
-### **V. :fa-check: Funcionalidad**   
+### **V. :large_blue_diamond: Funcionalidad**   
 --- 
-#### :fa-film: Demostración (Video)
+#### :black_circle: Demostración (Video)
 
 [![Video Demostrativo](https://img.youtube.com/vi/AB2dkN5RNro/0.jpg)](https://youtu.be/AB2dkN5RNro)
 
 ---
    
-#### :fa-camera: Despliegue en pantalla     
+#### :black_circle: Despliegue en pantalla     
    ![Despliegue en Pantalla](./src/imagenes/LCD_Imagen.png)
 
 ---
-#### :fa-camera: Envío  a servidor  
+#### :black_circle: Envío  a servidor  
   ![Despliegue en Pantalla](./src/imagenes/envio_servidor.png) 
 
 ---
-#### :fa-camera: Todos los componentes del proyecto
+#### :black_circle: Todos los componentes del proyecto
 ![Dispositivo Completo](./src/imagenes/dispositivoCompleto.jpg)
 
 ---
-## :fa-step-forward: **Fin**
+## :radio_button: **Fin**
 
 ---
 
-### &nbsp;&nbsp; :fa-check-circle: Conclusiones
+### &nbsp;&nbsp; :large_blue_diamond: Conclusiones
 
 
 ##### &nbsp; &nbsp; &nbsp; :heavy_check_mark: El Internet de las Cosas se plantea como una tecnología de enorme utilidad a la hora de mejorar la eficiencia de los dispositivos.
@@ -421,7 +421,7 @@ void hacerPost(String sensor){
 ---
 
 
-### &nbsp;&nbsp; :fa-external-link: Referencias 
+### &nbsp;&nbsp; :large_blue_diamond: Referencias 
 
 #### &nbsp;&nbsp; :link:  **[circuits4you](https://circuits4you.com/2018/03/10/esp8266-nodemcu-post-request-data-to-website/)**
 
