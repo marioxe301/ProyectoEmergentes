@@ -8,6 +8,8 @@
 #### &nbsp;&nbsp;&nbsp;&nbsp;    Ivan Carcamo - 21611288    
 #### &nbsp;&nbsp;&nbsp;&nbsp;    Luis Ponce   - 21711234    
 #### &nbsp;&nbsp;&nbsp;&nbsp;    Mario Flores - 21711252    
+
+&nbsp;&nbsp;
  
 ### :fa-info-circle: **Introducción**     
   
@@ -44,7 +46,7 @@
  
 #### :fa-object-group: Diseño   
   
-  &nbsp; &nbsp; Para el diseño o prototipo digital del dispositvo se  utilizó la herramienta [**Fritzing-Portable**](https://sourceforge.net/projects/fritzing-portable/)   
+  &nbsp; &nbsp; Para el diseño o prototipo digital del dispositvo se  utilizó la herramienta **[Fritzing-Portable](https://sourceforge.net/projects/fritzing-portable/)**   
  
 #### :fa-search: Sensor
 
@@ -52,7 +54,7 @@
  
 #### :fa-tv: Pantalla (Display LCD)
 
-&nbsp; &nbsp; Las libreria usada para el display fue [**Liquid Crystal**](https://www.arduino.cc/en/Reference/LiquidCrystal)
+&nbsp; &nbsp; Las libreria usada para el display fue **[Liquid Crystal](https://www.arduino.cc/en/Reference/LiquidCrystal)**
  
 #### :fa-wifi: Internet (Wifi)
 
