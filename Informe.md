@@ -11,42 +11,25 @@
  
 ### :fa-info-circle: **Introducción**     
   
-&nbsp;&nbsp; El siguiente informe da detalles de como se implementó un sistema simple que da información acerda de la luminosidad del ambiente.      
-  
-&nbsp;&nbsp; Con el avance  de la tecnología y desarrollo  de nuevos los sensores  podemos realizas diversas dispositivos que nos ayuden de una manera precisa y automatizada para obtener datos, como por ejemplo la temparatura en lugar, la condiciones de luz en ambiente, la humedad en una superficie. Y gracias a estos podemos hacer uso del internet que da paso al **IoT** (*Internet Of Things / Español: Internet de la Cosas*), ya que nos proporciona grandes ventajas como ver los datos de nuestros dispositivos en cualquier lugar en que estemos siempre y cuando obtengamos acceso a internet.     
+
+&nbsp;&nbsp; Con el avance  de la tecnología y desarrollo  de nuevos los sensores  podemos realizas diversas dispositivos que nos ayuden de una manera precisa y automatizada para obtener datos, como por ejemplo la temparatura en lugar, la condiciones de luz en ambiente, la humedad en una superficie. Y gracias a estos podemos hacer uso del internet que da paso al **IoT** (*Internet Of Things / Español: Internet de la Cosas*), ya que nos proporciona grandes ventajas como ver los datos de nuestros dispositivos en cualquier lugar en que estemos siempre y cuando obtengamos acceso a internet.   
 &nbsp;     
-&nbsp;&nbsp; Acontinuacion estaremos mostrando el desarrollo de un dispositivos que es capaz de detectar la intensida de luz en un ambiente y por medio de un modulo Wi-Fi en el circuito trasmitirlo atravez de internet en una pagina web, demostrando asi un ejemplo aplicable para el **Internet de las Cosas**.   
+&nbsp;&nbsp; A continuación estaremos mostrando el desarrollo de un dispositivos que es capaz de detectar la intensida de luz en un ambiente y atravez de un módulo Wi-Fi en el circuito trasmitirlo a travez de internet en una página web, demostrando asi un ejemplo aplicable para el **Internet de las Cosas**.   
  
 ### :fa-bullseye: **Objetivos**    
   
 &nbsp;&nbsp; - Implementar un circuito con un **sensor de luz** usando el microcontrolador **Arduino Uno** capaz de leer la intensida de luz que recibe.     
  
-&nbsp;&nbsp; - Implementar el **sensor de Wi-Fi** en el circuito para que este envie la información atravez de internet  
+&nbsp;&nbsp; - Implementar el **sensor de Wi-Fi** en el circuito para que este envie la información atravez de internet.
+
+&nbsp;&nbsp; - Comprender el principio del Intenet de las Cosas al enviar la información recolectado por el dispositivo a internet.
 
 &nbsp;&nbsp;  
 &nbsp;&nbsp;  
   
 ## :fa-forward: **Contenido**     
   
-##### Circuito Electronico:     
-&nbsp; &nbsp; Es una combinación de componentes conectados entre sí, de manera que proporcionen una o más trayectorias cerradas que permitan la circulación de la corriente y el aprovechamiento de ésta para la realización de un trabajo útil.    
-  
-##### Sensor:   
-  
-&nbsp; &nbsp; Es un dispositivo o componente electrónico que está capacitado para detectar acciones o estímulos externos y responder en consecuencia. Estos aparatos pueden transformar las magnitudes físicas o químicas en magnitudes eléctricas.   
-  
-##### Microcontrolador:   
-  
-&nbsp; &nbsp; Un microcontrolador es un circuito integrado que en su interior contiene una unidad central de procesamiento (CPU), unidades de memoria (RAM y ROM), puertos de entrada y salida y periféricos.    
-  
-##### Arduino:   
- 
-&nbsp; &nbsp; Es una plataforma de creación de electrónica de código abierto, la cual está basada en hardware y software libre, flexible y fácil de utilizar para los creadores y desarrolladores. Esta plataforma permite crear diferentes tipos de microordenadores de una sola placa a los que la comunidad de creadores puede darles diferentes tipos de uso.     
-  
-##### Arduino IDE:   
-  
-&nbsp; &nbsp; Es una aplicacion multiplataforma que se utiliza para escribir y cargar programas en placas compatibles con Arduino. Admite los lenguajes C y C ++ utilizando reglas especiales de estructuración de códigos.   
-  
+
 ###  **I. :fa-save: Software**      
  
 #### :fa-plug: Driver   
@@ -56,6 +39,8 @@
 #### :fa-laptop: IDE   
   
 &nbsp; &nbsp; Se utilizó el [**Arduino IDE**](https://www.arduino.cc/en/Main/Software)   
+###### &nbsp; &nbsp;  Arduino IDE:   
+&nbsp; &nbsp; Es una aplicacion multiplataforma que se utiliza para escribir y cargar programas en placas compatibles con Arduino. Admite los lenguajes C y C++ utilizando reglas especiales de estructuración de códigos.   
  
 #### :fa-object-group: Diseño   
   
@@ -77,6 +62,11 @@
  
 ####  :fa-microchip: Microcontrolador
 
+###### &nbsp; Microcontrolador:   
+  
+&nbsp; &nbsp; Un microcontrolador es un circuito integrado que en su interior contiene una unidad central de procesamiento (CPU), unidades de memoria (RAM y ROM), puertos de entrada y salida y periféricos.    
+  
+
 ##### Arduino WeMos D1:
 
  ![Arduino WeMos D1](./componentes/WeMosD1R1.jpg)
@@ -85,11 +75,18 @@
   
 #### :fa-search: Sensor
 
+
+
 ##### Sensor UV S12SD
 
  ![UV Sensor S12](./componentes/UV_Sensor_S12SD.jpg)
 
 > Comprado en [Think Making](https://thinkmaking.org/shop/sensor-de-luz-ultravioleta-guva-s12d/)
+
+###### &nbsp;&nbsp; Sensor:   
+  
+&nbsp; &nbsp; Es un dispositivo o componente electrónico que está capacitado para detectar acciones o estímulos externos y responder en consecuencia. Estos aparatos pueden transformar las magnitudes físicas o químicas en magnitudes eléctricas.   
+
 
 #### :fa-tv: Pantalla (Display LCD)
 
@@ -134,7 +131,8 @@
 
 &nbsp; &nbsp; Para poder utilizar el LCD, fue necesario descargar una libreria afuera del arduino IDE. Se siguieron los mismos [***pasos de instalacion de la pagina oficial del creador de la libreria "Arduino-LiquidCrystal-I2C-library"***](https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library/blob/master/README.md), la cual terminamos integrando a nuestro proyecto. 
 
-<img src="https://github.com/marioxe301/ProyectoEmergentes/blob/master/componentes/libreria_ARDUINO_LCD.png" width="200x"/>        
+![Libreria Arduino LCD](./componentes/libreria_ARDUINO_LCD.png)
+
 ### :fa-wifi: Internet (Wifi) 
 
 &nbsp; &nbsp; Para la instalacion de las librerias del Wifi (libreria [***ESP8266HTTPClient***](https://github.com/esp8266/Arduino/tree/master/libraries/ESP8266HTTPClient) y [***ESP8266WiFi***](https://github.com/esp8266/Arduino/tree/master/libraries/ESP8266WiFi)), simplemente fue cuestion de añadirla al proyecto ya que estas dos librerias ya vienen incluidas en las librerias que vienen con el arduino IDE.    
@@ -250,9 +248,12 @@ void hacerPost(String sensor){
 [![Video Demostrativo](https://img.youtube.com/vi/AB2dkN5RNro/0.jpg)](https://youtu.be/AB2dkN5RNro)
 
    
-#### :fa-camera: Despliegue en pantalla (Imagen)     
-   
-#### :fa-camera: Envío  a servidor (Imagen)    
+#### :fa-camera: Despliegue en pantalla     
+   ![Despliegue en Pantalla](./componentes/LCD_Imagen.png)
+
+
+#### :fa-camera: Envío  a servidor  
+  ![Despliegue en Pantalla](./componentes/envio_servidor.png) 
    
 #### :fa-camera: Todos los componentes del proyecto
 ![Dispositivo Completo](./circuito/dispositivoCompleto.jpg)
@@ -280,4 +281,13 @@ void hacerPost(String sensor){
 
 
 
+
 ### &nbsp;&nbsp; :fa-external-link: Referencias 
+
+#### &nbsp;&nbsp; :link:  **[circuits4you](https://circuits4you.com/2018/03/10/esp8266-nodemcu-post-request-data-to-website/)**
+
+#### &nbsp;&nbsp; :link:  **[Arduino](https://www.arduino.cc/en/Reference/LiquidCrystal)**
+
+#### &nbsp;&nbsp; :link:  **[ESP8266 Learning](http://www.esp8266learning.com/wemos-mini-i2c-lcd-example.php)**
+
+#### &nbsp;&nbsp; :link:  **[ESP8266 Arduino Core](https://arduino-esp8266.readthedocs.io/en/latest/esp8266wifi/readme.html)**
