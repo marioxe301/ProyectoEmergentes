@@ -79,7 +79,7 @@
 
 ##### Arduino WeMos D1:
 
-<img src="https://raw.githubusercontent.com/marioxe301/ProyectoEmergentes/master/componentes/Wemos%20D1%20R1.jpg" width="200"/>
+ ![Arduino WeMos D1](./componentes/WeMosD1R1.jpg)
 
 > Se puede conseguir en [Amazon](https://www.amazon.com/BephaMart-ESP8266-Development-Compatible-Arduino/dp/B01BAL1IGW)
   
@@ -87,7 +87,7 @@
 
 ##### Sensor UV S12SD
 
-<img src="https://raw.githubusercontent.com/marioxe301/ProyectoEmergentes/master/componentes/UV%20sensor%20S12SD.jpg" alt="drawing" width="200"/>  
+ ![UV Sensor S12](./componentes/UV_Sensor_S12SD.jpg)
 
 > Comprado en [Think Making](https://thinkmaking.org/shop/sensor-de-luz-ultravioleta-guva-s12d/)
 
@@ -95,9 +95,8 @@
 
 ##### LCD 1602 + I2C
 
-<img src="https://raw.githubusercontent.com/marioxe301/ProyectoEmergentes/master/componentes/LCD.jpg" alt="drawing" width="200"/>
-
-<img src ="https://raw.githubusercontent.com/marioxe301/ProyectoEmergentes/master/componentes/I2C%20para%20LCD.jpg" width="200"/>
+  ![LCD Parte Frontal](./componentes/LCD.jpg)
+  ![LCD Parte Trasera](./componentes/I2C_LCD.jpg)
 
 > Comprado en [Think Making](https://thinkmaking.org/shop/pantalla-lcd-1602-i2c/)
 
