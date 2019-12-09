@@ -263,6 +263,11 @@ El video demostrativo se puede ver en [**Youtube**](https://youtu.be/AB2dkN5RNro
 
 ##### &nbsp; &nbsp; &nbsp; :heavy_check_mark: Se logró extraer los datos recolectados por el sensor y enviarlos atravez de internet y que estos sean proyectados en un sitio web.
 
+##### &nbsp; &nbsp; &nbsp; :heavy_check_mark: Aprendimos el uso de un arduino y las infinidades de cosa que un micro controlador puede proporcionar para llevar a cabo la innovación, la creatividad, entre muchas otras cosas.
+
+##### &nbsp; &nbsp; &nbsp; :heavy_check_mark:  Aprendimos a aprovechar de las librerias que ofrece Arduino y tambien a la instalacion de librerias de terceros para llevar a cabo la integracion de componentes que nos ayudaron a desarrollar el proyecto
+
 
 
 ### &nbsp;&nbsp; :fa-external-link: Referencias 
+
